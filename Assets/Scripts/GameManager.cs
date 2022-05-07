@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public List<GameObject> prefabs;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SpawnTarget());
@@ -20,6 +19,7 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnRate);
             Instantiate(prefabs[Random.Range(0, prefabs.Count)]);
+
         }
     }
 
