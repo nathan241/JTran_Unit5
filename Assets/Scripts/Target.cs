@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Target : MonoBehaviour
 {
     private const float minForce = 10;
@@ -65,4 +66,5 @@ public class Target : MonoBehaviour
             gameManager.GameOver();
         }
     }
+
 }
